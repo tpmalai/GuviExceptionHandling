@@ -1,0 +1,29 @@
+
+1. Access Modifiers in Java:
+There are four access modifiers in Java:
+
+Public: Accessible from anywhere. Classes, methods, and variables marked as public can be accessed by any other class.
+
+Protected: Accessible within the same package or by subclasses in other packages. Protected members are not accessible outside the package unless they are inherited by a subclass.
+
+Default (Package-Private): Accessible within the same package. If no access modifier is specified, it is the default access level.
+
+Private: Accessible only within the same class. Private members are not visible to other classes.
+
+2. Difference between Exception and Error:
+Exception: Exceptions are events that occur during the execution of a program that disrupt the normal flow of instructions. They are often caused by user errors or faults in the program. Exceptions are intended to be caught and handled by the program.
+
+Error: Errors are more severe problems that typically occur beyond the control of the programmer. They are often caused by system failures or hardware issues. Errors are not typically handled by the program and are meant to signal a serious issue that should be addressed.
+
+3. Difference between Checked Exception and Unchecked Exception:
+Checked Exception: Checked exceptions are checked at compile time. These are exceptional conditions that a well-written application should anticipate and recover from. Examples include IOException and SQLException. They must be either caught (using try-catch) or declared in the method using throws keyword.
+
+Unchecked Exception: Unchecked exceptions are not checked at compile time; they are exceptions that occur at runtime. Examples include NullPointerException and ArrayIndexOutOfBoundsException. They do not need to be explicitly caught or declared.
+
+// ArrayIndexOutOfBoundsException
+int[] numbers = {1, 2, 3};
+System.out.println(numbers[3]);
+
+// StringIndexOutOfBoundsException
+String text = "Hello";
+System.out.println(text.charAt(10));
